@@ -29,12 +29,12 @@ public class UserPrincipal implements UserDetails {
 
     @Override
     public String getPassword() {
-        return this.getPassword();
+        return this.user.getPassWord();
     }
 
     @Override
     public String getUsername() {
-        return this.getUsername();
+        return this.user.getUserName();
     }
 
     @Override
@@ -54,6 +54,6 @@ public class UserPrincipal implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return this.isEnabled();
+        return this.user.isEnabled();
     }
 }
